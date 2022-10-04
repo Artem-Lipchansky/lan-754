@@ -5,8 +5,8 @@
     --title-text-color:#000000;
     --accent-color:#2196F3;
     --first-contrast-text-color: #757575; 
-    --second-contact-text-color:
-    --text-color: 
+    --second-contact-text-color:;
+    --text-color-contrast: #AFB1B8; 
     }
 
 
@@ -160,6 +160,15 @@ color: var(--title-text-color);
      gap: 30px;
 
         }
+
+        .header-contact .icon{
+            margin-right:   10px;
+            
+        }
+
+        .header-contact .icon{
+           fill: #757575; 
+        }
     
     
     
@@ -192,7 +201,7 @@ color: var(--title-text-color);
             text-align:left;
         }
     
-        .site-nav .link:focus,
+        .header-contact .link:focus,
     .header-contact .link:focus,
     .header-contact .link:focus{
         fill: var(--accent-color);
@@ -203,7 +212,7 @@ color: var(--title-text-color);
 
     
 
-    .site-nav .icon:focus,
+    .header-contact .icon:focus,
      .link:focus .icon,
      .link:hover .icon{
         fill: var(--accent-color);
@@ -296,13 +305,28 @@ border-radius: 4px;
         color: #FFFFFF;
     }
 
+    .hero-content{
+       max-width: 1600px;
+        height: 600px;
+        outline: 1ps solid black;
+        margin-left: auto;
+        margin-right: auto;
+        
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image:linear-gradient( to right, rgba(47,48,58,0.5),
+                     rgba(47,48,58,0.5)), url(../images/img-header.jpg);
+    }
     
 
     .hero-content{
-
+        
         padding-top: 200px;
         padding-bottom: 200px;
         text-align: center;
+        
+
     }
 
 .hero-title{
@@ -394,6 +418,8 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 margin-bottom: 10px;
 color: #212121;
+padding-top: 30px;
+
 
 }
 .features-item {
@@ -407,6 +433,16 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 
 color: #757575;
+}
+
+.features-box{
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -458,6 +494,12 @@ color: #212121;
     gap: 30px;
 }
 .team-item {
+    max-width: 270px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+     0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
 .team-name {
     font-weight: 500;
@@ -475,7 +517,7 @@ color: #212121;
     font-weight: 400;
 font-size: 16px;
 line-height: 1.18;
-margin-bottom: 30px;
+margin-bottom: 16px;
 
 
 text-align: center;
@@ -484,16 +526,88 @@ letter-spacing: 0.03em;
 color: #757575;
 }
 .team-social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+   
+   
 }
 .social-item {
+    padding-bottom: 30px;
 }
-.thumb{
+.peter{
     padding: 20px 24px;
+    
 }
 .team-item{
     width: calc((100% - 60px) / 3);
     background-color: var(--primary-text-color);
     border: 1px solid #EEEEEE;}
+
+    .social-link{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--primary-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon{
+    fill: #AFB1B8;
+}
+
+.social-link:hover,
+.social-link:focus{
+    background-color: var(--accent-color);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon{
+    fill: var(--primary-text-color);
+}
+
+
+
+
+/*===============================================CLIENTS=======================================================*/
+
+.client {
+}
+.container {
+}
+.client-title {
+    padding: 94px 50px;
+    text-align: center;
+    
+}
+.client-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.list {
+}
+.client-item {
+}
+.link {
+}
+.client-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    width: calc((1170px - 150px) / 6);
+    background-color: var(--primary-text-color);
+    border: 1px solid var(--first-contrast-text-color);
+    border-radius: 4px;
+    color: var(--text-color-contrast);
+}
+.client-icon {
+    fill: currentColor;
+}
+
 
 
 /*===============================================FOOTER=======================================================*/
