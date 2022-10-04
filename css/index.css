@@ -578,9 +578,15 @@ color: #757575;
 .container {
 }
 .client-title {
-    padding: 94px 50px;
-    text-align: center;
-    
+   
+   
+    margin-bottom: 50px;
+    font-weight: 700;
+font-size: 36px;
+line-height: 1.16px;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--title-text-color);
 }
 .client-list {
     display: flex;
@@ -600,7 +606,7 @@ color: #757575;
     height: 92px;
     width: calc((1170px - 150px) / 6);
     background-color: var(--primary-text-color);
-    border: 1px solid var(--first-contrast-text-color);
+    border: 1px solid var(--text-color-contrast);
     border-radius: 4px;
     color: var(--text-color-contrast);
 }
