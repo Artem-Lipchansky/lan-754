@@ -599,7 +599,7 @@ color: var(--title-text-color);
 }
 .link {
 }
-.client-link {
+.client-item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -612,6 +612,16 @@ color: var(--title-text-color);
 }
 .client-icon {
     fill: currentColor;
+}
+
+.client-item:hover,
+.client-item:focus{
+    border: 1px solid var(--accent-color);
+}
+
+.client-item:hover .client-icon,
+.client-item:focus .client-icon{
+    fill: var(--accent-color);
 }
 
 
