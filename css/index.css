@@ -5,7 +5,7 @@
     --title-text-color:#000000;
     --accent-color:#2196F3;
     --first-contrast-text-color: #757575; 
-    --second-contact-text-color:;
+    
     --text-color-contrast: #AFB1B8; 
     }
 
@@ -473,7 +473,32 @@ color: #757575;
 .section-list{
     display: flex;
     gap: 30px;
+    justify-content: center;
+    position: relative;
+
 }
+
+
+.picture{
+    display: flex;
+  width: 370px;
+  position: absolute;
+  bottom: 0;
+  height: 70px;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1. 14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--first-contrast-text-color);
+  background-color: rgba(47, 48, 58, 0.8);
+
+  justify-content: center;
+  
+}
+
 
 
 .section {
@@ -909,7 +934,7 @@ color: #757575;
     padding: 20px 24px;
     border: 1px solid #eeeeee;
     border-top: none;
-    cu
+    
 }
 
 .gallery-list .photo:hover, .gallery-list .photo:focus {
