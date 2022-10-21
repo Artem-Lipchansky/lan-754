@@ -534,10 +534,30 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             </button>
             <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
             <form>
-                <input type="text" class="modal-input" name="user-name" placeholder="Введіть ім'я"/>
-                <input type="text" class="modal-input" name="user-tel" placeholder="Введіть телефон"/>
-                <input type="text" class="modal-input" name="user-email" placeholder="Введіть пошту"/>
+               <label>
+                <span class="modal-label-text">Ім'я</span>
+                <input type="text" class="modal-input" name="user-name" placeholder="Введіть ім'я" required/>
+                <span class="modal-label-text">Телефон</span>
+                <input type="text" class="modal-input" name="user-tel" placeholder="+380 (96) 111-11-11"required
+                pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"/>
+                <span class="modal-label-text">Пошта</span>
+                <input type="text" class="modal-input" name="user-email" placeholder="Введіть пошту"required/>
+                </label> 
+
+                <div class="modal-field">
+                    <label for="user-text" class="modal-label">Коментар</label>
+                    <textarea name="user-text" id="user-text" cols="30" rows="10" class="modal-coment" placeholder="Введіть текст"></textarea>
+                </div>
+                <fieldset>
+                    <legend>
+
+                    </legend>
+                    <label for="big"></label>
+                    <input type="radio" id="big" name="big">
+                    
+                </fieldset>
                 <button type="submit">Відправити</button>
+
             </form>
         </div>
     </div>
