@@ -536,21 +536,32 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             <form>
                <label>
                 <span class="modal-label-text">Ім'я</span>
-                <input type="text" class="modal-input" name="user-name" placeholder="Введіть ім'я" required/>
-                <svg class="modal-input-icon">
+                <span class="input-wrap">
+                
+                <input type="text" class="modal-input" 
+                name="user-name" placeholder="Введіть ім'я" 
+                required/>
+                <svg class="modal-input-icon" withd="18" height="18">
                     <use href="./images/icons.svg#icon-person-black"></use>
                 </svg>
+            </span>
+            </label>
+            <div class="modal-field">
+                <svg class="modal-input-icon" withd="18" height="18">
+                    <use href="./images/icons.svg#icon-person-black"></use>
+                </svg></div>
                 <span class="modal-label-text">Телефон</span>
                 <input type="text" class="modal-input" name="user-tel" placeholder="+380 (96) 111-11-11"required
                 pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"/>
                 <span class="modal-label-text">Пошта</span>
-                <input type="text" class="modal-input" name="user-email" placeholder="Введіть пошту"required/>
-                </label> 
+                    <input required type="text" class="modal-input" name="user-email" placeholder="Введіть пошту"/>
+                 
 
                 <div class="modal-field">
                     <label for="user-text" class="modal-label">Коментар</label>
                     <textarea name="user-text" id="user-text" cols="30" rows="10" class="modal-coment" placeholder="Введіть текст"></textarea>
                 </div>
+                <!----
                 <fieldset>
                     <legend>
 
@@ -558,9 +569,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                     <label for="big"></label>
                     <input type="checkbox" id="big" name="big" value="big">
                     
-                </fieldset>
+                </fieldset>-->
                 <button type="submit">Відправити</button>
-
+            </label>
             </form>
         </div>
     </div>
