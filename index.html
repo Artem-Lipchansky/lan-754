@@ -400,7 +400,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                         <li class="client-item list">
                             <a class="client-size">
                             <svg class="client-icon" width="100" height="60">
-                                <use href="./images/icons.svg#icon-Logo-1"></use>
+                                <use href="./images/icons.svg#icon-logo-1"></use>
                             </svg></a>
 
 
@@ -525,6 +525,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         </div> 
          
     </footer>
+
+    <!=============================================MODAL================================================>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-btn" data-modal-close>
@@ -532,49 +534,89 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                     <use href="./images/icons.svg#icon-close-black"></use>
                 </svg>
             </button>
+
+
+
+    <!==========================================MODAL-WINDOW==========================================>        
             <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
-            <form>
-               <label>
+            <form class="modal-form">
+             <label>
                 <span class="modal-label-text">Ім'я</span>
                 <span class="input-wrap">
+                    <input type="text"
+                class="modal-input"
+                name="user-name" required/>
                 
-                <input type="text" class="modal-input" 
-                name="user-name" placeholder="Введіть ім'я" 
-                required/>
-                <svg class="modal-input-icon" withd="18" height="18">
-                    <use href="./images/icons.svg#icon-person-black"></use>
-                </svg>
-            </span>
+                
+               <svg class="modal-input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person-black"></use>
+
+          </svg>
+                </span>
+
             </label>
-            <div class="modal-field">
-                <svg class="modal-input-icon" withd="18" height="18">
-                    <use href="./images/icons.svg#icon-person-black"></use>
-                </svg></div>
+            <label>
+
+
                 <span class="modal-label-text">Телефон</span>
-                <input type="text" class="modal-input" name="user-tel" placeholder="+380 (96) 111-11-11"required
-                pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"/>
+                <span class="input-wrap">
+                    <input type="text"
+                class="modal-input"
+                name="user-name" required/>
+                
+                
+               <svg class="modal-input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+
+          </svg>
+                </span>
+                
+            </label>
+            <label>
                 <span class="modal-label-text">Пошта</span>
-                    <input required type="text" class="modal-input" name="user-email" placeholder="Введіть пошту"/>
-                 
+                <span class="input-wrap">
+                    <input type="text"
+                class="modal-input"
+                name="user-name" required/>
+                
+                
+               <svg class="modal-input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-email-black"></use>
 
-                <div class="modal-field">
-                    <label for="user-text" class="modal-label">Коментар</label>
-                    <textarea name="user-text" id="user-text" cols="30" rows="10" class="modal-coment" placeholder="Введіть текст"></textarea>
-                </div>
-                <!----
-                <fieldset>
-                    <legend>
+          </svg>
+                </span>
+                
+            
+        
+            </label>
 
-                    </legend>
-                    <label for="big"></label>
-                    <input type="checkbox" id="big" name="big" value="big">
-                    
-                </fieldset>-->
-                <button type="submit">Відправити</button>
+            
+           <div class="modal-field"></div>
+              <label for="user-text" class="modal-label">Коментар</label>
+                
+                   
+                    <textarea name="user-text" id="user-text" class="modal-comment"  placeholder="Введіть текст"></textarea>
+               
+              
+
+              <div class="modal-field">
+
+                <input type="checkbox" class="input-check" name="privacy" value="true"/>
+
+              
+                    <button type="submit">Відправити</button>
+            </div>
+           </div>
+           </div>
+                
             </label>
             </form>
         </div>
     </div>
+
+
+<!===========================================SCRIPT==================================================>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
