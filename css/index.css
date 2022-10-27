@@ -1030,7 +1030,50 @@ margin-bottom: 20px;
     margin-bottom: 4px;
   }
 
+  .check-text{
+    font-size: 14px;
+    color:var(--text-color-contrast);
+    display: flex;
+    align-items: center;
+  }
 
+  .check-text span{
+    content: '';
+    width: 16px;
+    height:15px;
+    border: 2px solid var(--dark-bg-color);
+    border-radius: 2px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+  }
+
+  .input-check:checked + .check-text span{
+    border-color: transparent;
+    background-color: var(--accent-color);
+    fill: var(--primary-text-color);
+  }
+
+  /*.check-text::before{
+    content: '';
+    width: 16px;
+    height:15px;
+    border: 2px solid var(--dark-bg-color);
+    border-radius: 2px;
+    margin-right: 5px;
+   
+  }
+
+  .input-check:checked + .check-text::before{
+    background-color: var(--accent-color);
+    background-image: url(../images/icon-check.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-color: transparent;
+
+  }*/
 
 
   .modal-input{
