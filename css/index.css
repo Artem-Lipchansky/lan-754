@@ -7,6 +7,7 @@
     --first-contrast-text-color: #757575; 
     
     --text-color-contrast: #AFB1B8; 
+    --duration: 250ms;
     }
 
 
@@ -43,6 +44,7 @@ body {
     }
     ul {
         list-style: none;
+        
     }
 
     .visually-hidden {
@@ -385,13 +387,14 @@ color: #FFFFFF;
         
         border: transparent;
     font-size: 16px;
+    
 
    }
 
    .button.primary:hover,
    .button.primary:focus{
     background-color: rgba(24, 140, 232, 1);
-    color:  var(--first-contrast-text-color);
+    color: var(--primary-text-color);
    
    }
 
@@ -489,7 +492,7 @@ color: #757575;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: var(--first-contrast-text-color);
+  color: var(--primary-text-color);
   background-color: rgba(47, 48, 58, 0.8);
 
   justify-content: center;
@@ -839,7 +842,60 @@ color: var(--accent-color);
 }
 
 
+/*============================================FORM-SUBSCRIP================================================*/
 
+
+.form-subscrip{
+    margin-left: auto;
+}
+
+.footer-form{
+    display: flex;
+}
+
+.footer-email{
+    width:358px;
+    height: 50px;
+    margin-right: 12px;
+    
+    color: var(--primary-text-color);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+
+}
+
+.telega-icon{
+    fill: var(--primary-text-color);
+}
+
+    .footer-form button {
+        width: 200px;
+        height: 50px;
+
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    
+}
+
+
+
+.footer-email:hover, .footer-email:focus {
+    border-color: var(--accent-color);
+    outline: transparent;
+}
+
+.footer-email::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    letter-spacing: 0.03em;
+    
+    color: rgba(255, 255, 255, 0.6);
+}
 
 
 /*=========================================GALLERY===============================================*/
@@ -935,6 +991,8 @@ color: #757575;
 }
 
 
+
+
 .portfolio-text{
     position: absolute;
     top: 0;
@@ -1028,6 +1086,7 @@ margin-bottom: 20px;
     position: relative;
     margin-top: 10px;
     margin-bottom: 4px;
+    
   }
 
   .check-text{
@@ -1035,6 +1094,7 @@ margin-bottom: 20px;
     color:var(--text-color-contrast);
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   .check-text span{
@@ -1054,6 +1114,13 @@ margin-bottom: 20px;
     border-color: transparent;
     background-color: var(--accent-color);
     fill: var(--primary-text-color);
+  }
+
+
+  .input-check:focus + .check-text span{
+    border-color:var(--accent-color);
+    
+    
   }
 
   /*.check-text::before{
@@ -1094,7 +1161,14 @@ margin-bottom: 20px;
  .modal-input:focus + .modal-input-icon 
   {fill: var(--accent-color);}
 
-
+.modal-check{
+    
+        position: relative;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    
+}
 
 
 
@@ -1114,7 +1188,11 @@ margin-bottom: 20px;
   }
 
 
-
+.terms{
+    color: var(--accent-color);
+    padding-left: 4px;
+    text-decoration:underline
+}
 
 
 .modal-input-icon{

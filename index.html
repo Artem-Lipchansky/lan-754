@@ -521,6 +521,19 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 
                     </ul>
              </div>
+             <div class="form-subscrip">
+                <p class="footer-title">Підпишіться на розсилку</p>
+                <form class="footer-form">
+                    <input type="email" name="email" placeholder="E-mail" class="footer-email">
+                    <button type="submit" class="button primary btn">
+                        Підписатися
+                    <svg class="telega-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-icon-send"></use>
+                    </svg>
+                    </button>
+                </form>
+    
+               </div>
            </div>
         </div> 
          
@@ -591,17 +604,17 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             </label>
 
             
-           <div class="modal-field"></div>
+           <div class="modal-field">
               <label for="user-text" class="modal-label">Коментар</label>
                 
                    
                     <textarea name="user-text" id="user-text" class="modal-comment"  placeholder="Введіть текст"></textarea>
                
-              
+              </div>
 
-              <div class="modal-field">
+              <div class="modal-check">
 
-                <input type="checkbox" class="input-check" name="privacy" value="true" id="privacy"/>
+                <input type="checkbox" class="input-check visually-hidden" name="privacy" value="true" id="privacy"/>
                 
                 <label for="privacy" class="check-text">
                     
@@ -612,16 +625,25 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                       </svg>
                      
                     </span>
-                 Погоджуюся з розсилкою та приймаю</label>
+                    
+                 Погоджуюся з розсилкою та приймаю <a href="/" class="terms">Умови договору</a>
 
-              </div>
-                    <button type="submit">Відправити</button>
-            
-           </div>
-           </div>
-                
+              
+                    
             </label>
-            </form>
+            </div>
+                <button type="submit" class="button primary btn">Відправити</button>
+        </form>
+           
+        
+           </div>
+
+          
+           
+        </div>
+                
+            
+            
         </div>
     </div>
 
