@@ -1,0 +1,164 @@
+
+
+.site-nav.list .link::after{
+content: '';
+
+display: block;
+width: 100%;
+height: 4px;
+background-color: #2196F3;
+position: absolute;
+left: 0;
+bottom: 0;
+display: none;
+border-radius: 2px;
+
+}
+
+.site-nav.list .link:hover::after{
+display: block;
+}
+
+
+
+
+.site-nav.list{
+   
+    display: flex;
+    gap: 50px;
+}
+
+
+
+
+
+
+
+
+.header-page{
+    background-color: var(--primary-text-color);
+    border-bottom: 1px solid #ececec;
+}
+
+
+
+.header-logo{
+    font-family: 'Raleway';
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: var(--accent-color); 
+margin-right: 93px;
+padding-top: 24px;
+padding-bottom: 25px;
+
+ 
+
+}
+
+.logo-accent{
+font-weight: 700;
+font-size: 42;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: var(--title-text-color);
+ }
+
+ .site-nav .link{
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        
+        color: var(--dark-bg-color)
+    }
+    .site-nav.list .link{
+        position: relative;
+    }
+
+    .current.link{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--accent-color); 
+    }
+
+    .site-nav .link {
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;}
+
+    
+
+    
+    
+    .header-contact{
+        display: flex;
+    margin-left: auto;
+     gap: 30px;
+
+        }
+
+        .header-contact .icon{
+            margin-right:   10px;
+            
+        }
+
+        .header-contact .icon{
+           fill: #757575; 
+        }
+    
+    
+    
+    
+      
+        
+    .header-contact .link{
+        
+        align-items: center;
+       display: flex;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: #757575;
+        }
+       
+    
+    
+        .logo-accent:hover,
+        .logo-accent:focus{
+    color: var(--accent-color);
+        } 
+    
+    
+        .site-nav .link:hover,
+    .header-contact .link:hover,
+    .header-contact .link:hover{
+            color: var(--accent-color);
+            text-align:left;
+        }
+    
+        .header-contact .link:focus,
+    .header-contact .link:focus,
+    .header-contact .link:focus{
+        fill: var(--accent-color);
+        text-align:left;
+        
+    
+    }
+
+    
+
+    .header-contact .icon:focus,
+     .link:focus .icon,
+     .link:hover .icon{
+        fill: var(--accent-color);
+        text-align:left;
+        
+    
+    }
+    
