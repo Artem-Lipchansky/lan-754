@@ -1,0 +1,56 @@
+.button.secondary{
+    cursor: pointer;
+    padding: 6px 22px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: #F5F4FA;
+    color: var(--title-text-color);
+    border: 0;
+    border-radius: 4px;
+
+    
+
+border-radius: 4px;
+
+}
+
+.button{
+    
+
+    color: var(--accent-color);
+    background-color: var(--primary-text-color);
+
+    padding: 10px 32px 10px 32px;
+    color: var(--title-text-color);
+    
+    
+}
+
+
+
+.button-list .current,
+.button.secondary:hover,
+.button.secondary:focus{
+    color: var(--primary-text-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+.button-list{
+
+display: flex;
+ margin-bottom: 50px;
+ justify-content: center;
+
+  
+}
+
+
+.button-list .btn+.btn {
+    margin-left: 8px;
+     }

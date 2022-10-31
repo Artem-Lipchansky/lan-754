@@ -1,9 +1,23 @@
 @import './components/container';
+@import './components/socials';
+@import './components/modal';
+
 
 @import './base/common';
-
-@import './utils/vars';
-@import './utils/hidden';
+@import './base/reset';
+@import './base/buttons';
 
 @import './layouts/header';
+@import './layouts/hero';
+@import './layouts/feature';
+@import './layouts/clients';
+@import './layouts/forsub';
+@import './layouts/section';
+@import './layouts/team';
+@import './layouts/footer';
+@import './layouts/portfolio';
+
+@import './utils/hidden';
+@import './utils/vars';
+
 
