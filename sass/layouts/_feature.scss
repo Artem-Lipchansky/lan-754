@@ -1,5 +1,8 @@
 .features-list{
     display: flex;
+    & .item:last-child {
+        margin-right: 0;
+        }
 }
 
 .features-list .item{
@@ -15,9 +18,7 @@
     letter-spacing: 0.03em;
 }
 
-.features-list .item:last-child {
-    margin-right: 0;
-    }
+
 
 
 
